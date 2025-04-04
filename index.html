@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .download-btn {
+        background-color: #1f2937;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s;
+      }
+  
+      .download-btn:hover {
+        background-color: #374151;
+      }
+    </style>  
 </head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-gray-100 font-sans p-6">
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-800">Cynthia Kiiru</h1>
+        <p class="text-lg text-gray-600">Project Manager | Agile Practitioner | Team Leader</p>
+        <a href="Cynthia Wanjiru CV.pdf" download class="download-btn inline-block mt-4">Download CV</a> 
+        <nav class="mt-6">
+            <ul class="flex justify-center space-x-6 text-gray-700 font-medium">
+              <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+              <li><a href="projects.html" class="hover:text-blue-600">Projects</a></li>
+              <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
             </ul>
-        </nav>
+          </nav>
     </header>
-    
-    <section class="hero">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hi,My name is Mary Ajuoga and  I'm a passionate web developer who loves and enjoys building websites.</p>
-    </section>
-
+    <section class="max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800 text-center">About Me</h2>
+        <div class="bg-white p-6 rounded-xl shadow text-gray-700">
+          <p>
+            I'm Cynthia Kiiru, a dedicated and detail-oriented Project Manager with over 3 years of experience in leading cross-functional teams and delivering impactful digital solutions. My expertise lies in Agile and Scrum methodologies, strategic planning, and stakeholder engagement.
+          </p>
+          <p class="mt-4">
+            Whether it's implementing new systems, launching customer-centric platforms, or optimizing team workflows, I bring clarity, structure, and motivation to every project I lead. I thrive in dynamic environments where collaboration and adaptability are key.
+          </p>
+        </div>
+      </section>
     <footer>
         <p>Connect with me:</p>
-        <a href="#">GitHub https://github.com/Ajuoga-igt</a> |<a href="#">LinkedIn https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a> | <a href="#">Twitter</a>
+        <a href="#">GitHub https://github.com/Kiiru-66</a> | <a href="#">X(Twitter)</a>
     </footer>
 </body>
 </html>

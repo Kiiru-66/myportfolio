@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .download-btn {
+        background-color: #1f2937;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s;
+      }
+  
+      .download-btn:hover {
+        background-color: #374151;
+      }
+    </style>  
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="text-center mb-10">
+        <nav class="mt-6">
+          <ul class="flex justify-center space-x-6 text-gray-700 font-medium">
+            <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+            <li><a href="projects.html" class="hover:text-blue-600">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            
-            <button type="submit">Send</button>
+      </header>
+    <section class="max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-800 text-center">Contact Me</h2>
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow">
+        <p class="text-lg text-gray-600 text-center mb-4">I would love to hear from you! Please fill out the form below to get in touch.</p>
+        <form class="bg-white p-6 rounded-xl shadow space-y-4">
+            <div class="flex flex-col space-y-2">
+                <label for="name" class="text-gray-700">Name</label>
+                <input type="text" id="name" class="border border-gray-300 p-2 rounded" required />
+            </div>
+            <div class="flex flex-col space-y-2">
+                <label for="email" class="text-gray-700">Email</label>
+                <input type="email" id="email" class="border border-gray-300 p-2 rounded" required />
+            </div>
+            <div class="flex flex-col space-y-2">
+                <label for="message" class="text-gray-700">Message</label>
+                <textarea id="message" rows="4" class="border border-gray-300 p-2 rounded" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white p-2 rounded">Send Message</button>
         </form>
-    </section>
+</section>
 
-    <footer>
-        <p>Connect with me:</p>
-        <a href="#">GitHub https://github.com/Ajuoga-igt</a> | <a href="#">LinkedIn https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a> | <a href="#">Twitter</a>
-    </footer>
+<footer class="text-center text-gray-500 text-sm mt-10">
+  <p>Get in touch:</p>
+  <a href="https://github.com/Kiiru-66" class="text-blue-600 hover:underline">GitHub</a>
+  |
+  <a href="#" class="text-blue-600 hover:underline">X (Twitter)</a>
+  <p class="mt-4">&copy; 2025 Cynthia Kiiru. All rights reserved.</p>
+</footer>
 </body>
 </html>
+            
+    

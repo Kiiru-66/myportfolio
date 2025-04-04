@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio - Projects</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .download-btn {
+      background-color: #1f2937;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #374151;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-100 font-sans p-6">
+  <header class="text-center mb-10">
+    <nav class="mt-6">
+      <ul class="flex justify-center space-x-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="projects.html" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="max-w-3xl mx-auto mb-12">
+    <h2 class="text-3xl font-semibold mb-6 text-gray-800 text-center">Project Highlights</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Digital Banking Transformation</h3>
+        <p class="text-gray-700">
+          Led the rollout of a mobile banking solution for a major financial institution, achieving a 40% increase in customer engagement and reducing manual transaction errors.
+        </p>
+      </div>
 
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project One</h3>
-            <p>Description of project one.</p>
-        </div>
-        <div class="project">
-            <h3>Project Two</h3>
-            <p>Description of project two.</p>
-        </div>
-    </section>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">E-Learning Platform Implementation</h3>
+        <p class="text-gray-700">
+          Oversaw the deployment of a scalable e-learning platform, ensuring timely delivery and aligning cross-functional teams across 3 regions.
+        </p>
+      </div>
 
-    <footer>
-        <p>Connect with me:</p>
-        <a href="#">GitHub https://github.com/Ajuoga-igt </a> | <a href="#">LinkedIn https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav</a> | <a href="#">Twitter</a>
-    </footer>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Internal HR Tool Rollout</h3>
+        <p class="text-gray-700">
+          Managed the implementation of a company-wide HR tool, streamlining employee onboarding and performance tracking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-gray-500 text-sm mt-10">
+    <p>Get in touch:</p>
+    <a href="https://github.com/Kiiru-66" class="text-blue-600 hover:underline">GitHub</a>
+    |
+    <a href="#" class="text-blue-600 hover:underline">X (Twitter)</a>
+    <p class="mt-4">&copy; 2025 Cynthia Kiiru. All rights reserved.</p>
+  </footer>
 </body>
 </html>
